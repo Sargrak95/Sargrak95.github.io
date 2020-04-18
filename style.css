@@ -129,6 +129,7 @@ p{
     text-transform: uppercase;
     text-decoration: none;
     transition: background .1s linear;
+    text-align: center;
 }
 
 .btn--red{
@@ -137,6 +138,10 @@ p{
 
 .btn--red:hover{
     background-color: #db2c2c;
+}
+
+.btn--long{
+    min-width: 280px;
 }
 
 /* Features
@@ -312,6 +317,25 @@ p{
      transition: fill .1s linear;
  }
 
+ .social--footer{
+     justify-content: center;
+ }
+
+ .social--footer .social__item{
+     border-width: 2px;
+     border-color: #ffffff;
+     border-radius: 2px;
+     background-color: transparent;
+ }
+ 
+ .social--footer .social__item:hover{
+     background-color: #ffffff;
+ }
+
+ .social--footer .social__icon{
+     fill: #ffffff;
+ }
+
  /* Reviews */
 
  .testimonial{
@@ -362,4 +386,68 @@ p{
     font-weight: 700;
     text-transform: uppercase;
     color: #ffffff;
+}
+
+/* Dowland */
+
+.dowland{
+    margin: 90px 0;
+    text-align: center;
+}
+
+.dowland__title{
+    color: #2d3033;
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.dowland__text{
+    color: #2d3033;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+
+.footer{
+    padding: 70px 0;
+    background-color: #3a3e64;
+}
+
+.footer__inner{
+    display:flex;
+    flex-wrap:wrap;
+    
+}
+
+.footer__block{
+    width: 33.33333%;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.footer__title{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.footer__address{
+    color: #ffffff;
+    opacity: .5;
+    font-style:normal;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+footer__text{
+    color: #ffffff;
+    opacity: .5;
+    font-size: 14px;
+    line-height: 1.5;
 }
