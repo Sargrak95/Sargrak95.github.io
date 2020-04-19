@@ -338,6 +338,7 @@ p{
 
  .social--footer .social__icon{
      fill: #ffffff;
+    cursor: pointer;
  }
 
  /* Reviews */
