@@ -2,9 +2,13 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link href="https://fonts.googleapis.com/css?family=Cardo:400i|Open+Sans:700|Raleway:300,400,600,700&display=swap" rel="stylesheet">        <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=divice-width, initial-scale-1">
+        <link href="https://fonts.googleapis.com/css?family=Cardo:400i|Open+Sans:700|Raleway:300,400,600,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>        
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>ActiveBox</title>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
 
@@ -36,25 +40,28 @@
         </svg>
         
 
-<header class="header">
+<header class="header" id="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">
                 <img src="img/ActiveBox.png" alt="">
                 </div>
                 
-                <nav class="nav">
-                    <a class="nav_link" href="#">Features</a>
-                    <a class="nav_link" href="#">Works</a>
-                    <a class="nav_link" href="#">Our Team</a>
-                    <a class="nav_link" href="#">Testimonials</a>
-                    <a class="nav_link" href="#">Download</a>
+                <nav class="nav" id="nav">
+                    <a class="nav_link" href="#" data-scroll="#features">Features</a>
+                    <a class="nav_link" href="#" data-scroll="#works">Works</a>
+                    <a class="nav_link" href="#" data-scroll="#team">Our Team</a>
+                    <a class="nav_link" href="#" data-scroll="#reviews">Testimonials</a>
+                    <a class="nav_link" href="#" data-scroll="#dowload">Download</a>
                 </nav>
+                <button class="burger" type="button" id="navToggle">
+                    <span class="burger_item">Menu</span>
+                </button>
             </div>
         </div>
 </header>
         
-<div class="intro">
+<div class="intro" id="intro">
     <div class="container"> 
         <div class="intro_inner">
         <h1 class="intro_title">Your Favorite One Page Multi Purpose Template</h1>
@@ -67,7 +74,7 @@
 
 <!-- Features -->
 
-<div class="container">
+<div class="container" id="features">
     <div class="features">
         <div class="fearures__item">
             <img class="features__icon" src="img/features/feature-1.png" alt="">
@@ -109,7 +116,7 @@
 
 <!--Works  -->
 
-<div class="works">
+<div class="works" id="works">
     <div class="works__item">
         <img class="works__photo" src="img/works/Layer -1.jpg" alt="">
         <div class="works__content">
@@ -170,7 +177,7 @@
 
 <!-- Team -->
 
-<div class="team">
+<div class="team" id="team">
     <div class="container">
         <div class="team__inner">
             <div class="team__item">
@@ -292,21 +299,38 @@
 
 <!-- Testimonials -->
 
-<div class="testimonial">
+<div class="testimonial" id="reviews">
     <div class="container">
 
-        <div class="reviews__item">
-            <div class="reviews__photo">
-                <img class="reviews__img" src="img/testimonials/testimonials-1.jpg" alt="">
-            </div>
-            
-                <div class="reviews__content">
-                    <div class="reviews_text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
+        <div class="reviews_slider" id="reviewsSlider">
+                <div class="slick-item">  
+                    <div class="reviews__item">
+                    <div class="reviews__photo">
+                        <img class="reviews__img" src="img/testimonials/testimonials-1.jpg" alt="">
+                    </div>
                     
-                    <div class="reviews__autor">Susan Sims, Interaction Designer at XYZ</div>
-                </div>
+                        <div class="reviews__content">
+                            <div class="reviews_text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</div>
+                            
+                            <div class="reviews__autor">Susan Sims, Interaction Designer at XYZ</div>
+                        </div>
+                    </div>
+                </div>  
+                
+                <div class="slick-item">  
+                    <div class="reviews__item">
+                        <div class="reviews__photo">
+                            <img class="reviews__img" src="img/testimonials/testimonials-1.jpg" alt="">
+                        </div>
+                        
+                            <div class="reviews__content">
+                                <div class="reviews_text">“lipsum”</div>
+                                
+                                <div class="reviews__autor">Susan Sims, Interaction Designer at XYZ</div>
+                            </div>
+                        </div>
+                 </div>          
         </div>
-
 
 
     </div>
@@ -314,7 +338,7 @@
 
 <!-- Dowland -->
 
-<div class="dowland">
+<div class="dowland" id="dowload">
     <div class="container">
         <h3 class="dowland__title">Are You Ready to Start? Download Now For Free!</h3>
     </div>
@@ -377,6 +401,8 @@
 
     </div>
 </footer>
+<script  src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="app.js"></script>
 
 </body>
 </html>
