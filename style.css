@@ -364,8 +364,12 @@ p{
  .reviews_slider {
     height: 500px;
     overflow: hidden;
+
  }
 
+.reviews_slider:focus{
+    outline: none;
+ }
  .reviews_slider.slick-initialized {
      height: auto;
  }
@@ -374,6 +378,10 @@ p{
      display: flex;
      flex-wrap: wrap;
      overflow: hidden;
+ }
+
+ .slick-item:focus{
+     outline: none;
  }
 
 .reviews__photo{
@@ -399,6 +407,7 @@ p{
     padding-left: 80px;
 
 }
+
 
 .reviews_text{
     font-family:'Cardo', sans-serif;
